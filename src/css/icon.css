@@ -1,0 +1,71 @@
+@font-face{font-family: 'termor';src:url('fonts/termor.eot?2sn7sy');src:url('fonts/termor.eot?#iefix2sn7sy') format('embedded-opentype'),url('fonts/termor.woff?2sn7sy') format('woff'),url('fonts/termor.ttf?2sn7sy') format('truetype'),url('fonts/termor.svg?2sn7sy#termor') format('svg');font-weight: normal;font-style: normal;}
+[class^="icon-"], [class*=" icon-"]{font-family: 'termor';speak: none;font-style: normal;font-weight: normal;font-variant: normal;line-height:normal;text-transform: none;
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.icon-spin{display: inline-block; -moz-animation: spin 2s infinite linear; -o-animation: spin 2s infinite linear; -webkit-animation: spin 2s infinite linear; animation: spin 2s infinite linear;}
+.icon-male:before{content: "\e61a";}
+.icon-female:before{content: "\e61b";}
+.icon-sort-19:before{content: "\e61c";}
+.icon-sort-91:before{content: "\e61d";}
+.icon-sort-big:before{content: "\e61e";}
+.icon-sort-small:before{content: "\e61f";}
+.icon-sort-az:before{content: "\e620";}
+.icon-sort-za:before{content: "\e621";}
+.icon-ellipsis-vertical:before{content: "\e622";}
+.icon-ellipsis-horizontal:before{content: "\e623";}
+.icon-folder-open-alt:before{content: "\e624";}
+.icon-folder-close-alt:before{content: "\e625";}
+.icon-folder-open:before{content: "\e626";}
+.icon-folder-close:before{content: "\e627";}
+.icon-angle-left:before{content: "\e628";}
+.icon-angle-right:before{content: "\e629";}
+.icon-angle-up:before{content: "\e62a";}
+.icon-angle-down:before{content: "\e62b";}
+.icon-desktop:before{content: "\e62c";}
+.icon-laptop:before{content: "\e62d";}
+.icon-tablet:before{content: "\e62e";}
+.icon-mobile:before{content: "\e62f";}
+.icon-remove:before{content: "\e618";}
+.icon-edit:before{content: "\e619";}
+.icon-jian:before{content: "\e615";}
+.icon-hot:before{content: "\e616";}
+.icon-xin:before{content: "\e617";}
+.icon-key:before{content: "\e604";}
+.icon-weixin:before{content: "\e606";}
+.icon-sina:before{content: "\e602";}
+.icon-qq:before{content: "\e603";}
+.icon-wolf:before{content: "\e601";}
+.icon-question-sign:before{content: "\e605";}
+.icon-tupian:before{content: "\e614";}
+.icon-user:before{content: "\e607";}
+.icon-signout:before{content: "\e608";}
+.icon-shopping-cart:before{content: "\e609";}
+.icon-plus:before{content: "\e60a";}
+.icon-minus:before{content: "\e60b";}
+.icon-lock:before{content: "\e60c";}
+.icon-list-alt:before{content: "\e60d";}
+.icon-group:before{content: "\e60e";}
+.icon-gift:before{content: "\e60f";}
+.icon-file:before{content: "\e610";}
+.icon-eye-open:before{content: "\e611";}
+.icon-cogs:before{content: "\e612";}
+.icon-circle:before{content: "\e613";}
+.icon-align-justify:before{content: "\e600";}
+.icon-apple:before{content: "\e630";}
+.icon-windows:before{content: "\e631";}
+.icon-android:before{content: "\e632";}
+.icon-linux:before{content: "\e633";}
+.icon-refresh:before{content: "\e634";}
+.icon-spinner:before{content: "\e635";}
+.icon-comment:before{content: "\e636";}
+.icon-reorder:before{content: "\e637";}
+.icon-star:before{content: "\e638";}
+.icon-star-half-empty:before{content: "\e639";}
+.icon-star-empty:before{content: "\e63a";}
+.icon-star-half:before{content: "\e63b";}
+.icon-tags:before{content: "\e63c";}
+.icon-thumbs-up-alt:before{content: "\e63d";}
+.icon-thumbs-down-alt:before{content: "\e63e";}
+.icon-qrcode:before{content: "\e63f";}
+.icon-search:before{content: "\e640";}
+
