@@ -14,11 +14,12 @@ var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
-    'app': SRC_PATH + '/js/index.js'
+    'app': SRC_PATH + '/js/index.js',
   },
   output: {
     path: DIST_PATH,
-    filename: '[name]-[hash:5].js'
+    filename: '[name]-[hash:5].js',
+    //chunkFilename:"[id].chunk.js"
   },
   module: {
     rules:[
@@ -75,6 +76,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename:DIST_PATH+'/index.html',
       template: SRC_PATH + '/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/texiao_index.html',
+      template: SRC_PATH + '/texiao_index.html'
     }),
     new UglifyJSPlugin({
       uglifyOptions:{

@@ -5,6 +5,10 @@ require('../css/common.css');
 
 //下拉菜单响应
 require('./module/dropdown.js');
+//tab响应
+require('./module/tab.js');
+//手机版导航折叠
+require('./module/collapse.js');
 //轮播图
 require('./module/jquery.lightSlider.js');
 
