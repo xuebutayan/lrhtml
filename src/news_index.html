@@ -1,6 +1,5 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang='en'>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,38 +9,11 @@
 <meta property="qc:admins" content="166537372564162560006375" />
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="/Public/ui/bootstrap/3.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/Public/ui/bootstrap-material-design/0.2.1/css/ripples.min.css">
-<link rel="stylesheet" href="/Public/ui/bootstrap-material-design/0.2.1/css/material-wfont.min.zip.css">
-<link rel="stylesheet" href="/Public/Common/Css/icon.css" />
-<link href="/Public/Home/css/common.css" rel="stylesheet" media="screen" type="text/css">
-<script src="/Public/sea-modules/jquery/jquery/1.11.0/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="/Public/Common/Js/jquery.artDialog.js?skin=idialog"></script>
-<script src="/Public/Common/Js/iframeTools.js"></script>
-<script type="text/javascript">
-var _URL_ = '/Article1',_APP_ = '';
-	$.browser = {};
-	(function(){
-		$.browser.msie = false;
-		$.browser.version = 0;
-		if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
-			$.browser.msie = true;
-			$.browser.version=RegExp.$1;
-		}
-	})();
-</script>
-<script type="text/javascript" src="/Public/Common/Js/common.js"></script>
-<script type="text/javascript" src="/Public/Home/js/common.js"></script>
+
 <!--公用文件-->
 </head>
 <body style="padding-top:60px;">
 <!--页头-->
-<!--[if lt IE 9]>
-    <div id="page_message" class="page_mess_animate page_mess_error" style="display: block;">
-        您现在使用的是旧版本的IE内核浏览器，为了您能更好及完整体验网站所有功能，请尽快升级您的浏览器至最新版IE，或者使用&nbsp;<a href="https://www.google.com/intl/zh-CN/chrome/browser/" target="_blank">Chrome</a>，<a href="http://www.firefox.com.cn/" target="_blank">Firefox</a>，<a href="http://www.apple.com/safari/" target="_blank">Safari</a>&nbsp;等更加符合标准的浏览器！
-    </div>
-<![endif]-->
 <!--nav-->
 <div class="block-body-bg" data-0="top: 0px;" data-690="top: -345px;"></div>
 <div class="navbar navbar-primary navbar-fixed-top">
@@ -53,7 +25,7 @@ var _URL_ = '/Article1',_APP_ = '';
               <span class="icon-bar"></span>
           </button>
           <a href="/" title="懒人PHP" class="navbar-brand">
-        <img alt="懒人PHP" src="/Public/Common/Images/logo-nav.png" />
+        <img alt="懒人PHP" src="Images/logo-nav.png" />
           </a>
       </div>
       <div class="navbar-collapse collapse navbar-warning-collapse">
@@ -163,16 +135,9 @@ var _URL_ = '/Article1',_APP_ = '';
 
                                   </ul>
                 </li>          </ul>
-          <!-- <div class="search-item">
-            <a class="active" data-model="" href="javascript:void(0);">全部</a> <a data-model="Effect" href="javascript:void(0);">特效</a> <a data-model="Article" href="javascript:void(0);">资讯</a>
-          </div>
-          <form method="post" action="/Search/index.html" class="navbar-form navbar-left">
-            <input id="search_model" type="hidden" name="model" value="" />
-              <input name="kw" type="text" class="form-control col-lg-8" placeholder="搜索">
-          </form> -->
           <ul class="nav navbar-nav navbar-right">
                           <li>
-                <a title="使用QQ登录" href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101233439&redirect_uri=http%3A%2F%2Fwww.lanrenphp.com%2Findex.php%2FUser%2FVerify%2Fbind&state=2d10d1a2d13c0ca9c9f5f25eb7929554" style="display: inline"><img alt="QQ登录" src="/Public/Home/images/qq.png" width="35" /></a>
+                <a title="使用QQ登录" href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101233439&redirect_uri=http%3A%2F%2Fwww.lanrenphp.com%2Findex.php%2FUser%2FVerify%2Fbind&state=2d10d1a2d13c0ca9c9f5f25eb7929554" style="display: inline"><img alt="QQ登录" src="images/qq.png" width="35" /></a>
                 <div class="btn-group">
                   <a class="btn btn-primary" href="/User/User/login.html" title="登陆">登陆</a>
                   <a class="btn btn-primary" href="/User/User/register.html" title="注册">注册</a>
@@ -184,13 +149,7 @@ var _URL_ = '/Article1',_APP_ = '';
 </div>
 <!--/nav-->
 <!--/页头-->
-<script type="text/javascript">
-  $('.search-item a').click(function(){
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    $('#search_model').val($(this).attr('data-model'));
-  });
-</script>
+
 <div class="block-index-top">
   <div class="container">
     <div class="panel">
@@ -199,21 +158,21 @@ var _URL_ = '/Article1',_APP_ = '';
           <div class="panel-body">
             <div id="index-news-slider-container">
               <ul class="list-unstyled" id="index-news-slider">
-                <li> <a href="/article-8.html" target="_blank" title="马云：老板亏待员工，员工亏待客户"> <img src="/Uploads/Model/Article/20150829/55e12897be5fa.png" alt="马云：老板亏待员工，员工亏待客户"> <span class="card-title">马云：老板亏待员工，员工亏待客户</span> </a> </li><li> <a href="/article-6.html" target="_blank" title="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> <img src="/Uploads/Model/Article/20150829/55e1291510586.png" alt="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> <span class="card-title">周鸿祎：产品运营六字法则 – 刚需、痛点、高频</span> </a> </li><li> <a href="/article-5.html" target="_blank" title="你现在的位置决定了你未来的位置？"> <img src="/Uploads/Picture/20150714/55a4cea3cb397.jpg" alt="你现在的位置决定了你未来的位置？"> <span class="card-title">你现在的位置决定了你未来的位置？</span> </a> </li>              </ul>
+                <li> <a href="/article-8.html" target="_blank" title="马云：老板亏待员工，员工亏待客户"> <img src="images/55e12897be5fa.png" alt="马云：老板亏待员工，员工亏待客户"> <span class="card-title">马云：老板亏待员工，员工亏待客户</span> </a> </li><li> <a href="/article-6.html" target="_blank" title="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> <img src="images/55e1291510586.png" alt="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> <span class="card-title">周鸿祎：产品运营六字法则 – 刚需、痛点、高频</span> </a> </li><li> <a href="/article-5.html" target="_blank" title="你现在的位置决定了你未来的位置？"> <img src="images/55a4cea3cb397.jpg" alt="你现在的位置决定了你未来的位置？"> <span class="card-title">你现在的位置决定了你未来的位置？</span> </a> </li>              </ul>
             </div>
             <!-- /新闻幻灯片 -->
             <ul class="media-list">
-            <li class="media media-xs clearfix"> <a target="_blank" title="[转]程序员的酸甜苦辣——告别Coding" href="/article-1.html" class="pull-left media-object-container"> <img alt="[转]程序员的酸甜苦辣——告别Coding" src="/Uploads/Model/Article/1/55b0acd24e3ce.jpg" class="media-object hot_news"> </a>
+            <li class="media media-xs clearfix"> <a target="_blank" title="[转]程序员的酸甜苦辣——告别Coding" href="/article-1.html" class="pull-left media-object-container"> <img alt="[转]程序员的酸甜苦辣——告别Coding" src="images/55a6044ae25c8.jpg" class="media-object hot_news"> </a>
               <div class="media-body">
                 <h4 class="media-heading"> <i class="iconfont icon-fire on-right"></i><a target="_blank" title="[转]程序员的酸甜苦辣——告别Coding" href="/article-1.html">[转]程序员的酸甜苦辣——告别Co...</a> </h4>
                 <div class="media-description">毕业找工作时，我曾对朋友说：“程序员这个称谓，是一个荣誉。”过去...</div>
               </div>
-            </li><li class="media media-xs clearfix"> <a target="_blank" title="个人如何玩赚微商？" href="/article-9.html" class="pull-left media-object-container"> <img alt="个人如何玩赚微商？" src="/Uploads/Editor/20150715/55a6044ae25c8.jpg" class="media-object hot_news"> </a>
+            </li><li class="media media-xs clearfix"> <a target="_blank" title="个人如何玩赚微商？" href="/article-9.html" class="pull-left media-object-container"> <img alt="个人如何玩赚微商？" src="images/55a6044ae25c8.jpg" class="media-object hot_news"> </a>
               <div class="media-body">
                 <h4 class="media-heading"> <i class="iconfont icon-fire on-right"></i><a target="_blank" title="个人如何玩赚微商？" href="/article-9.html">个人如何玩赚微商？</a> </h4>
                 <div class="media-description">写这篇文章是因为在知乎看到一篇关于微商月流水7万的话题，大家混互联...</div>
               </div>
-            </li><li class="media media-xs clearfix"> <a target="_blank" title="老板不懂营销，驴肉小店终究会关门" href="/article-10.html" class="pull-left media-object-container"> <img alt="老板不懂营销，驴肉小店终究会关门" src="/Uploads/Picture/20150715/55a60592b2f51.jpg" class="media-object hot_news"> </a>
+            </li><li class="media media-xs clearfix"> <a target="_blank" title="老板不懂营销，驴肉小店终究会关门" href="/article-10.html" class="pull-left media-object-container"> <img alt="老板不懂营销，驴肉小店终究会关门" src="images/55a6044ae25c8.jpg" class="media-object hot_news"> </a>
               <div class="media-body">
                 <h4 class="media-heading"> <i class="iconfont icon-fire on-right"></i><a target="_blank" title="老板不懂营销，驴肉小店终究会关门" href="/article-10.html">老板不懂营销，驴肉小店终究会关...</a> </h4>
                 <div class="media-description">晚上吃饭的时候，又路过了那家驴肉小饭馆，我和媳妇不约而同的往里面...</div>
@@ -244,11 +203,26 @@ var _URL_ = '/Article1',_APP_ = '';
         </div>
         <div class="col-sm-4">
           <div class="panel-body">
-            <div class="media clearfix"> <a class="pull-left media-object-container" href="/zhanchang.html" title="站长"> <img class="media-object" style="width: 64px; height:64px; " src="/Public/Home/images/colnews.jpg" alt="站长"> </a>
+            <div class="media clearfix"> <a class="pull-left media-object-container" href="/zhanchang.html" title="站长"> <img class="media-object" " src="images/zhanzhang.png" alt="站长服务"> </a>
               <div class="media-body">
-                <h4 class="media-heading"> <i class="iconfont icon-list on-right"></i><a href="/zhanchang.html" title="站长">站长</a> </h4>
-                <div class="media-description"></div>
+                <h4 class="media-heading"> <i class="iconfont icon-list on-right"></i><a href="/zhanchang.html" title="站长" class="panel-title">站长服务</a> </h4>
               </div>
+              <div class="media-description">
+                  <div class="media-service">
+                    <ul class="media-line">
+                      <li><i class="icon-folder-open on-center"></i><br/>软文代发</li>
+                      <li><i class="icon-refresh on-center"></i><br/>链接交换</li>
+                      <li><i class="icon-signout on-center"></i><br/>广告推广</li>
+                      <li><i class="icon-tupian on-center"></i><br/>网页特效</li>
+                      <li><i class="icon-tags on-center"></i><br/>美工设计</li>
+                      <li><i class="icon-cogs on-center"></i><br/>网站开发</li>
+                      <li><i class="icon-shopping-cart on-center"></i><br/>网站交易</li>
+                      <li><i class="icon-list-alt on-center"></i><br/>源码销售</li>
+                    </ul>
+                  </div>
+                  <div class="media-pic"><img src="images/s-1.jpg" class="img-responsive"></div>
+                  <div class="media-pic"><img src="images/s-2.jpg" class="img-responsive"></div>
+                </div>
             </div>
           </div>
           <div class="panel-body">
@@ -273,7 +247,7 @@ var _URL_ = '/Article1',_APP_ = '';
         <div class="panel-body">
           <div class="list-group mt-20">
             <div class="list-group-item">
-                <div class="row-picture"> <a href="/article-17.html" title="我们就差一个写代码的了" target="_blank"> <img src="/Uploads/Model/Article/20150912/793-2.jpg" alt="我们就差一个写代码的了"> </a> </div>
+                <div class="row-picture"> <a href="/article-17.html" title="我们就差一个写代码的了" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="我们就差一个写代码的了"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-17.html" title="我们就差一个写代码的了" target="_blank">我们就差一个写代码的了</a></h4>
                   <p class="list-group-item-text">题主是计算机专业学生，社交网站上那些说“我有一个绝妙的创意和一个靠谱的团队，就差一个写代码的了”的项目招人信息往往招来大片调侃，那这种招黑的节奏是源自于什么呢?讲个真事儿。我有个同学的朋友的同事(关系比...</p>
@@ -284,7 +258,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-14.html" title="为什么富人会越富，穷人会越穷" target="_blank"> <img src="/Uploads/Model/Article/14/55a9a53de422e.png" alt="为什么富人会越富，穷人会越穷"> </a> </div>
+                <div class="row-picture"> <a href="/article-14.html" title="为什么富人会越富，穷人会越穷" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="为什么富人会越富，穷人会越穷"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-14.html" title="为什么富人会越富，穷人会越穷" target="_blank">为什么富人会越富，穷人会越穷</a></h4>
                   <p class="list-group-item-text">基督耶稣传授三个人理财赚钱的方法：他给第一个人五袋金子，给第二个人两袋金子，给第三个人一袋金子，然后给他们设定偿还的期限，看他们如何利用这些金子来赚取财富。第一个人利用五袋金子做了投资，很快又净赚了五m...</p>
@@ -295,7 +269,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-13.html" title="驱动力来自哪里-献给迷茫的程序员" target="_blank"> <img src="/Uploads/Editor/20150715/55a61131680e5.jpg" alt="驱动力来自哪里-献给迷茫的程序员"> </a> </div>
+                <div class="row-picture"> <a href="/article-13.html" title="驱动力来自哪里-献给迷茫的程序员" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="驱动力来自哪里-献给迷茫的程序员"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-13.html" title="驱动力来自哪里-献给迷茫的程序员" target="_blank">驱动力来自哪里-献给迷茫的程序员</a></h4>
                   <p class="list-group-item-text">驱动你做一件事情的动力来源是什么？不知道大家想过这个问题没有。一般人可能会想到两种驱动力。一种是生存本能带来的驱动力，即生物性驱动力。比如每天要吃饭、睡觉、上厕所，长大了要恋爱、结婚等。这种驱动力保证...</p>
@@ -306,7 +280,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-12.html" title="儿子，你是男人，你必须知道" target="_blank"> <img src="/Uploads/Editor/20150715/55a60d7066df3.jpg" alt="儿子，你是男人，你必须知道"> </a> </div>
+                <div class="row-picture"> <a href="/article-12.html" title="儿子，你是男人，你必须知道" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="儿子，你是男人，你必须知道"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-12.html" title="儿子，你是男人，你必须知道" target="_blank">儿子，你是男人，你必须知道</a></h4>
                   <p class="list-group-item-text">事业永远第一   虽然金钱不是万能的,但没有钱是万万不能的,虽然这句话很俗,但绝对有道理,所以30岁之前,请把你大部分精力放在你的事业上.   别把钱看得太重   不要做什么抱怨自己现在工资低...</p>
@@ -317,7 +291,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-11.html" title="什么是穷人思维？" target="_blank"> <img src="/Uploads/Editor/20150715/55a607531fe9f.jpg" alt="什么是穷人思维？"> </a> </div>
+                <div class="row-picture"> <a href="/article-11.html" title="什么是穷人思维？" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="什么是穷人思维？"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-11.html" title="什么是穷人思维？" target="_blank">什么是穷人思维？</a></h4>
                   <p class="list-group-item-text">2010年我刚从北大青鸟出来的时候，郑州的房价均价应该在6000左右吧。那个时候，三环左右的房价应该是5000多点。我有一个高中同学，他没上大学，高中毕业以后就跟着别人学修电脑，现在已经有自己的公司了。2010年的时...</p>
@@ -328,7 +302,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-10.html" title="老板不懂营销，驴肉小店终究会关门" target="_blank"> <img src="/Uploads/Picture/20150715/55a60592b2f51.jpg" alt="老板不懂营销，驴肉小店终究会关门"> </a> </div>
+                <div class="row-picture"> <a href="/article-10.html" title="老板不懂营销，驴肉小店终究会关门" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="老板不懂营销，驴肉小店终究会关门"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-10.html" title="老板不懂营销，驴肉小店终究会关门" target="_blank">老板不懂营销，驴肉小店终究会关门</a></h4>
                   <p class="list-group-item-text">晚上吃饭的时候，又路过了那家驴肉小饭馆，我和媳妇不约而同的往里面瞅了一眼，里面空空荡荡，貌似都没人吃饭。媳妇来了一句：他家也不装空调，大夏天的谁愿意去呢？&nbsp;&nbsp;前天中午的时候，路过那家驴肉小饭店...</p>
@@ -339,7 +313,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-9.html" title="个人如何玩赚微商？" target="_blank"> <img src="/Uploads/Editor/20150715/55a6044ae25c8.jpg" alt="个人如何玩赚微商？"> </a> </div>
+                <div class="row-picture"> <a href="/article-9.html" title="个人如何玩赚微商？" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="个人如何玩赚微商？"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-9.html" title="个人如何玩赚微商？" target="_blank">个人如何玩赚微商？</a></h4>
                   <p class="list-group-item-text">写这篇文章是因为在知乎看到一篇关于微商月流水7万的话题，大家混互联网的经常会在朋友圈听到这样的字眼，某某品牌创始人，销售某某面膜，月流水达到500万。额，很多人一看到这么大金额的流水就蒙圈了。其实呢，这流...</p>
@@ -350,7 +324,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-8.html" title="马云：老板亏待员工，员工亏待客户" target="_blank"> <img src="/Uploads/Model/Article/20150829/55e12897be5fa.png" alt="马云：老板亏待员工，员工亏待客户"> </a> </div>
+                <div class="row-picture"> <a href="/article-8.html" title="马云：老板亏待员工，员工亏待客户" target="_blank"> <img src="images/55e12897be5fa.png" alt="马云：老板亏待员工，员工亏待客户"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-8.html" title="马云：老板亏待员工，员工亏待客户" target="_blank">马云：老板亏待员工，员工亏待客户</a></h4>
                   <p class="list-group-item-text">我一直坚持一个观点，没有吃亏的员工，只有吃亏的老板。老板亏待员工，员工亏待客户，客户亏待老板！就是这样一个简单的理！另外，让优秀的员工吃亏了，老板自己损失最大。信任是降低成本的最直接办法，彼此间的信任...</p>
@@ -361,7 +335,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-7.html" title="麦当劳第二杯半价，从你身上赚了更多的钱？" target="_blank"> <img src="/Uploads/Editor/20150715/1436920708.png" alt="麦当劳第二杯半价，从你身上赚了更多的钱？"> </a> </div>
+                <div class="row-picture"> <a href="/article-7.html" title="麦当劳第二杯半价，从你身上赚了更多的钱？" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="麦当劳第二杯半价，从你身上赚了更多的钱？"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-7.html" title="麦当劳第二杯半价，从你身上赚了更多的钱？" target="_blank">麦当劳第二杯半价，从你身上赚了更多的钱？</a></h4>
                   <p class="list-group-item-text">上有一种解释：“对于麦当劳而言，一杯饮料的成本包括了店租、水电、人工和原材料，你在买第一杯的时候已经把这些费用都分担了，后面半价的第二杯只需要原材料的成本，即为边际成本，而这个很低。所以也许第二杯麦当...</p>
@@ -372,7 +346,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-6.html" title="周鸿祎：产品运营六字法则 – 刚需、痛点、高频" target="_blank"> <img src="/Uploads/Model/Article/20150829/55e1291510586.png" alt="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> </a> </div>
+                <div class="row-picture"> <a href="/article-6.html" title="周鸿祎：产品运营六字法则 – 刚需、痛点、高频" target="_blank"> <img src="images/55e1291510586.png" alt="周鸿祎：产品运营六字法则 – 刚需、痛点、高频"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-6.html" title="周鸿祎：产品运营六字法则 – 刚需、痛点、高频" target="_blank">周鸿祎：产品运营六字法则 – 刚需、痛点、高频</a></h4>
                   <p class="list-group-item-text">“如何找到好的产品?它必须满足三个条件：刚需、痛点、高频。”我不知道大家想听什么，比如说有两大部分可以讲，高大上的我们讲转型互联网。今天的主题是产品创新，我就讲讲微观的。我在我们的行业里，战略比不上两...</p>
@@ -383,7 +357,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-5.html" title="你现在的位置决定了你未来的位置？" target="_blank"> <img src="/Uploads/Picture/20150714/55a4cea3cb397.jpg" alt="你现在的位置决定了你未来的位置？"> </a> </div>
+                <div class="row-picture"> <a href="/article-5.html" title="你现在的位置决定了你未来的位置？" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="你现在的位置决定了你未来的位置？"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-5.html" title="你现在的位置决定了你未来的位置？" target="_blank">你现在的位置决定了你未来的位置？</a></h4>
                   <p class="list-group-item-text">职场中，你是属于是帮着干、跟着干的，还是领着干的，或者对着干的？不管现在你处在哪一位置，它都将与你未来的事业息息相关。当看到这张图，请先扪心自问一下！图中哪一个是你？目前你是哪一个？将来你会是哪一个？...</p>
@@ -394,7 +368,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-4.html" title="史上最全软文标题写作套路" target="_blank"> <img src="/Uploads/Editor/20150615/1434357444.jpg" alt="史上最全软文标题写作套路"> </a> </div>
+                <div class="row-picture"> <a href="/article-4.html" title="史上最全软文标题写作套路" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="史上最全软文标题写作套路"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-4.html" title="史上最全软文标题写作套路" target="_blank">史上最全软文标题写作套路</a></h4>
                   <p class="list-group-item-text">都说看一个人漂不漂亮，要看她的脸，而看一个人的脸，最重要的是看她的眼睛。一篇软文好看不好看，首先我们看的就是标题，标题有没有吸引力，能不能抓住读者的眼球至关重要，特别是网络上的软文，没有吸引力的标题就...</p>
@@ -405,7 +379,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-3.html" title="如何发外链不会被删技巧" target="_blank"> <img src="/Uploads/Picture/20150615/557e457dbd6cd.jpg" alt="如何发外链不会被删技巧"> </a> </div>
+                <div class="row-picture"> <a href="/article-3.html" title="如何发外链不会被删技巧" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="如何发外链不会被删技巧"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-3.html" title="如何发外链不会被删技巧" target="_blank">如何发外链不会被删技巧</a></h4>
                   <p class="list-group-item-text">说起发外链的工作，估计只要做SEO的没有谁敢说自己没发过，因为外链建设是网站外部优化的一个非常重要的环节，外链发布的质量直接影响着咱们SEO工作的进展。和所有的伙伴们一样，本人最开始接触这个行业也是从发外链...</p>
@@ -416,7 +390,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-2.html" title="最适合草根站长玩的流量站" target="_blank"> <img src="/Uploads/Picture/20150615/557e44bf9db15.jpg" alt="最适合草根站长玩的流量站"> </a> </div>
+                <div class="row-picture"> <a href="/article-2.html" title="最适合草根站长玩的流量站" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="最适合草根站长玩的流量站"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-2.html" title="最适合草根站长玩的流量站" target="_blank">最适合草根站长玩的流量站</a></h4>
                   <p class="list-group-item-text">流量站这类型是很多草根站长的首要选择，因为它的简单、方便、只要有流量就有收入的方式让很多草根站长热衷。虽然这种站点的操作方式虽然简单，但是要把流量做起来并不容易，做了起来后又要面对服务器、带宽、版权等...</p>
@@ -427,7 +401,7 @@ var _URL_ = '/Article1',_APP_ = '';
                 </div>
               </div>
               <div class="list-group-separator"></div><div class="list-group-item">
-                <div class="row-picture"> <a href="/article-1.html" title="[转]程序员的酸甜苦辣——告别Coding" target="_blank"> <img src="/Uploads/Model/Article/1/55b0acd24e3ce.jpg" alt="[转]程序员的酸甜苦辣——告别Coding"> </a> </div>
+                <div class="row-picture"> <a href="/article-1.html" title="[转]程序员的酸甜苦辣——告别Coding" target="_blank"> <img src="images/55a6044ae25c8.jpg" alt="[转]程序员的酸甜苦辣——告别Coding"> </a> </div>
                 <div class="row-content">
                   <h4 class="list-group-item-heading"><a href="/article-1.html" title="[转]程序员的酸甜苦辣——告别Coding" target="_blank">[转]程序员的酸甜苦辣——告别Coding</a></h4>
                   <p class="list-group-item-text">毕业找工作时，我曾对朋友说：“程序员这个称谓，是一个荣誉。”过去的一切仿佛还在眼前，然而三天后，我就要告别程序员这个职业了。将来，我或许还会偶尔写写代码自娱自乐，我还会保持着单词第一个字母大写的“职业...</p>
@@ -464,156 +438,54 @@ var _URL_ = '/Article1',_APP_ = '';
                     <div class="media-left"><span class="key">1.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-17.html" target="_blank" title="我们就差一个写代码的了">我们就差一个写代码的了</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">2.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-14.html" target="_blank" title="为什么富人会越富，穷人会越穷">为什么富人会越富，穷人会越穷</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">3.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-13.html" target="_blank" title="驱动力来自哪里-献给迷茫的程序员">驱动力来自哪里-献给迷茫的程序员</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">4.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-12.html" target="_blank" title="儿子，你是男人，你必须知道">儿子，你是男人，你必须知道</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">5.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-11.html" target="_blank" title="什么是穷人思维？">什么是穷人思维？</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">6.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-10.html" target="_blank" title="老板不懂营销，驴肉小店终究会关门">老板不懂营销，驴肉小店终究会关门</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">7.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-9.html" target="_blank" title="个人如何玩赚微商？">个人如何玩赚微商？</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div><div class="media">
                     <div class="media-left"><span class="key">8.</span></div>
                     <div class="media-body">
                       <h4 class="media-heading"><a href="/article-8.html" target="_blank" title="马云：老板亏待员工，员工亏待客户">马云：老板亏待员工，员工亏待客户</a></h4>
-                      <p class="media-author">admin</p>
+                      <p class="media-author"></p>
                     </div>
                   </div>              </div>
             </div>
-            <div class="tab-pane fade " id="rank-14-monthviews">
-              <div class="media-list list-rank">
-                <div class="media">
-                    <div class="media-left"><span class="key">1.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-1.html" target="_blank" title="[转]程序员的酸甜苦辣——告别Coding">[转]程序员的酸甜苦辣——告别Coding</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">2.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-9.html" target="_blank" title="个人如何玩赚微商？">个人如何玩赚微商？</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">3.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-10.html" target="_blank" title="老板不懂营销，驴肉小店终究会关门">老板不懂营销，驴肉小店终究会关门</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">4.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-17.html" target="_blank" title="我们就差一个写代码的了">我们就差一个写代码的了</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">5.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-7.html" target="_blank" title="麦当劳第二杯半价，从你身上赚了更多的钱？">麦当劳第二杯半价，从你身上赚了更多的钱？</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">6.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-3.html" target="_blank" title="如何发外链不会被删技巧">如何发外链不会被删技巧</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">7.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-12.html" target="_blank" title="儿子，你是男人，你必须知道">儿子，你是男人，你必须知道</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">8.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-8.html" target="_blank" title="马云：老板亏待员工，员工亏待客户">马云：老板亏待员工，员工亏待客户</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div>              </div>
-            </div>
-            <div class="tab-pane fade " id="rank-14-rate">
-              <div class="media-list list-rank">
-                <div class="media">
-                    <div class="media-left"><span class="key">1.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-1.html" target="_blank" title="[转]程序员的酸甜苦辣——告别Coding">[转]程序员的酸甜苦辣——告别Coding</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">2.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-9.html" target="_blank" title="个人如何玩赚微商？">个人如何玩赚微商？</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">3.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-10.html" target="_blank" title="老板不懂营销，驴肉小店终究会关门">老板不懂营销，驴肉小店终究会关门</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">4.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-17.html" target="_blank" title="我们就差一个写代码的了">我们就差一个写代码的了</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">5.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-7.html" target="_blank" title="麦当劳第二杯半价，从你身上赚了更多的钱？">麦当劳第二杯半价，从你身上赚了更多的钱？</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">6.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-3.html" target="_blank" title="如何发外链不会被删技巧">如何发外链不会被删技巧</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">7.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-12.html" target="_blank" title="儿子，你是男人，你必须知道">儿子，你是男人，你必须知道</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div><div class="media">
-                    <div class="media-left"><span class="key">8.</span></div>
-                    <div class="media-body">
-                      <h4 class="media-heading"><a href="/article-8.html" target="_blank" title="马云：老板亏待员工，员工亏待客户">马云：老板亏待员工，员工亏待客户</a></h4>
-                      <p class="media-author">admin</p>
-                    </div>
-                  </div>              </div>
-            </div>
+
+
           </div>
         </div>
       </div>
@@ -646,62 +518,5 @@ var _URL_ = '/Article1',_APP_ = '';
     </div>
   </div>
 </div>
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"lanrenphp"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
-<!--Bootstrap核心js-->
-<script src="/Public/ui/bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/Public/ui/bootstrap-material-design/0.2.1/js/ripples.min.js"></script>
-<script src="/Public/ui/bootstrap-material-design/0.2.1/js/material.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $.material.init();
-    });
-</script>
-
-<script src="/Public/sea-modules/seajs/seajs/2.1.1/sea.js"></script>
-<script type="application/javascript">
-  // Set configuration
-  seajs.config({
-      base: "/Public/sea-modules/",
-      alias: {
-          "bootstrap": "/Public/ui/bootstrap/3.0.2/js/bootstrap.min.js",
-          "jNotify": "jquery/jNotify/2.0/jNotify.js",
-          "base": "/Public/Js/public/src/base.js"
-      },
-      paths: {
-          "apps": "/Public/sea-apps",
-      },
-      vars: {
-          "siteName": "www_v3",
-          "moduleName": "Content",
-          "controllerName": "Index",
-      }
-  });
-  seajs.use(['apps/index'], function(index) {
-      index.init();
-  });
-</script>
-<div class="hidden"><script language="javascript" type="text/javascript" src="http://js.users.51.la/19079942.js"></script>
-<noscript><a href="http://www.51.la/?19079942" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/19079942.asp" style="border:none" /></a></noscript>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?95a3f33f75d9fa3df4a2437f19c4c9fa";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script></div>
 </body>
 </html>

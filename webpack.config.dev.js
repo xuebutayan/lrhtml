@@ -81,6 +81,18 @@ module.exports = {
       filename:DIST_PATH+'/texiao_index.html',
       template: SRC_PATH + '/texiao_index.html'
     }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/news_index.html',
+      template:SRC_PATH+'/news_index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/news_list.html',
+      template:SRC_PATH+'/news_list.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/news_content.html',
+      template:SRC_PATH+'/news_content.html'
+    }),
     new UglifyJSPlugin({
       uglifyOptions:{
         ie8:false,
