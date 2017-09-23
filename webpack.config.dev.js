@@ -82,6 +82,10 @@ module.exports = {
       template: SRC_PATH + '/texiao_index.html'
     }),
     new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/texiao_content.html',
+      template: SRC_PATH + '/texiao_content.html'
+    }),
+    new HtmlWebpackPlugin({
       filename:DIST_PATH+'/news_index.html',
       template:SRC_PATH+'/news_index.html'
     }),
@@ -92,6 +96,30 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename:DIST_PATH+'/news_content.html',
       template:SRC_PATH+'/news_content.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/muban_index.html',
+      template:SRC_PATH+'/muban_index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/muban_content.html',
+      template:SRC_PATH+'/muban_content.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/jishu_index.html',
+      template:SRC_PATH+'/jishu_index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/shequ_index.html',
+      template:SRC_PATH+'/shequ_index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/shequ_content.html',
+      template:SRC_PATH+'/shequ_content.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/login.html',
+      template:SRC_PATH+'/login.html'
     }),
     new UglifyJSPlugin({
       uglifyOptions:{
