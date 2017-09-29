@@ -121,6 +121,10 @@ module.exports = {
       filename:DIST_PATH+'/login.html',
       template:SRC_PATH+'/login.html'
     }),
+    new HtmlWebpackPlugin({
+      filename:DIST_PATH+'/user.html',
+      template:SRC_PATH+'/user.html'
+    }),
     new UglifyJSPlugin({
       uglifyOptions:{
         ie8:false,

@@ -12,6 +12,10 @@ require('./module/collapse.js');
 //轮播图
 require('./module/jquery.lightSlider.js');
 
+//用户页居住地址
+require('./module/location.js')
+require('./module/superSelect.js')
+
 //头部轮播
 if($("#index-banner").length > 0){
 	$("#index-banner").lightSlider({
@@ -37,3 +41,5 @@ $('.J_gotoTop').on('click', function(){
 });
 
 })();
+
+
