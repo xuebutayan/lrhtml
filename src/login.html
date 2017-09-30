@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -154,11 +153,36 @@
           <div class="panel-body">
           <div class="login-header">
             <ul>
-              <li class="active"><a href="#denglu">登录</a></li>
-              <li><a href="#zhuce">注册</a></li>
+              <li class="active"><a href="#denglu" data-toggle="tab">登录</a></li>
+              <li><a href="#zhuce" data-toggle="tab">注册</a></li>
             </ul>
           </div>
-          <form action="/index.php/User/User/doLogin.html" method="post">
+          <form action="/index.php/User/User/doLogin.html" method="post" id="denglu">
+            <div class="login-form">
+              <div class="input-group">
+                <span class="icon-user pic"></span>
+                <input class="form-control " type="text" name="uname" maxlength="128" id="username" placeholder="请输入用户名">
+              </div>
+
+              <div class="input-group">
+                <span class="icon-lock pic"></span>
+                <input class="form-control" type="password" name="password" maxlength="128" id="password" placeholder="请输入密码">
+              </div>
+
+              <div class="input-group">
+                <span class="pic icon-user"></span>
+                <input type="text" class="form-control " name="code" maxlength="4" placeholder="请输入验证码">
+
+                <span class="input-group-addon" style="width: 120px; padding:0 6px 0 0; cursor: pointer;"><img class="ccodepic" onClick="this.src='/api.php?m=Seccode&length=4&width=112&height=35&font_size=16&'+Math.random()" src="/api.php?m=Seccode&length=4&width=112&height=35&font_size=16" style="cursor:pointer;vertical-align: middle;"/>
+                 </span>
+                 </div>
+              <div style="clear:both;"></div>
+              <div><a href=""><img class="img-responsive" src="images/dl.jpg"></a></div>
+              <div class="forget"><a href="">忘记密码？</a></div>
+
+            </div>
+          </form>
+          <form action="/index.php/User/User/doLogin.html" method="post" id="zhuce">
             <div class="login-form">
               <div class="input-group">
                 <span class="icon-user pic"></span>
