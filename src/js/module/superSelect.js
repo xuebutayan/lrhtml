@@ -218,30 +218,4 @@ function superSelect(options) {
 
 }
 
-//用户页居住地址
-$(function(){
-  var options = {
-    data : data,
-    text : ['<option value="">-省-</option>','<option value="">-市-</option>','<option value="">-区-</option>'],
-  }
-  var sel = new superSelect(options);
-  sel.bind('#birthprovince');
-  sel.bind('#birthcity');
-  sel.bind('#birthdist');
 
-  var sel = new superSelect(options);
-  sel.bind('#resideprovince');
-  sel.bind('#residecity');
-  sel.bind('#residedist');
-});
-function change_ad(obj){
-  $(obj).parent('.ad1').css('display','none');
-  $(obj).parent('.ad1').siblings('.ad2').css('display','block');
-}
-
-
-$(function($){
-  $('#myform').validate({
-    errorPlacement: function(error, element){error.appendTo( element.parent() );}
-  });
-});
