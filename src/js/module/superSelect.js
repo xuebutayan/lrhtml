@@ -3,7 +3,7 @@
  *
  */
 
-function superSelect(options) {
+module.exports = function superSelect(options) {
 
 	var bindEls	= new Array();
 	var items	= {};
@@ -217,5 +217,3 @@ function superSelect(options) {
 	}
 
 }
-
-
