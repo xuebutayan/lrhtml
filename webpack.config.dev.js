@@ -19,7 +19,7 @@ module.exports = {
   output: {
     path: DIST_PATH,
     filename: '[name]-[hash:5].js',
-    //chunkFilename:"[id].chunk.js"
+    chunkFilename:"[id].chunk.js"
   },
   module: {
     rules:[
@@ -124,7 +124,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename:DIST_PATH+'/user.html',
       template:SRC_PATH+'/user.html'
-    }),
+    })/*,
     new UglifyJSPlugin({
       uglifyOptions:{
         ie8:false,
@@ -134,7 +134,7 @@ module.exports = {
           beautify:false
         }
       }
-    })
+    })*/
   ],
   devtool:'inline-source-map',
   devServer: {
