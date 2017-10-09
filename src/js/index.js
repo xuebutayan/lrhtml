@@ -11,11 +11,6 @@ require('./module/tab.js');
 require('./module/collapse.js');
 //轮播图
 require('./module/jquery.lightSlider.js');
-
-//用户页居住地址
-require('./module/location.js')
-require('./module/superSelect.js')
-
 //头部轮播
 if($("#index-banner").length > 0){
 	$("#index-banner").lightSlider({
@@ -39,6 +34,31 @@ $('.J_gotoTop').on('click', function(){
     $("body,html").animate({scrollTop: 0},500);
     return false;
 });
+//会员模块
+$('#user_changeAddress').click(function(){
+	$(this).parent('.ad1').css('display','none');
+	$(this).parent('.ad1').siblings('.ad2').css('display','block');
+	require.ensure(['./module/superSelect.js','./module/location.js'],function(require){
+		var superSelect = require('./module/superSelect.js')
+		var data = require('./module/location.js');
+		var options = {
+		data : data,
+		text : ['<option value="">-省-</option>','<option value="">-市-</option>','<option value="">-区-</option>'],
+		}
+
+		var sel = new superSelect(options);
+		sel.bind('#birthprovince');
+		sel.bind('#birthcity');
+		sel.bind('#birthdist');
+
+		var sel = new superSelect(options);
+		sel.bind('#resideprovince');
+		sel.bind('#residecity');
+		sel.bind('#residedist');
+	});
+});
+
+
 
 })();
 

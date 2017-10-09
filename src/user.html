@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,28 +7,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="canonical" href="http://www.tongzhou.com/" />
 <title>会员中心首页</title>
-<script type="text/javascript">
-  //用户页居住地址
-$(function(){
-  var options = {
-    data : data,
-    text : ['<option value="">-省-</option>','<option value="">-市-</option>','<option value="">-区-</option>'],
-  }
-  var sel = new superSelect(options);
-  sel.bind('#birthprovince');
-  sel.bind('#birthcity');
-  sel.bind('#birthdist');
-
-  var sel = new superSelect(options);
-  sel.bind('#resideprovince');
-  sel.bind('#residecity');
-  sel.bind('#residedist');
-});
-function change_ad(obj){
-  $(obj).parent('.ad1').css('display','none');
-  $(obj).parent('.ad1').siblings('.ad2').css('display','block');
-}
-</script>
 <body>
 <!--nav-->
 <div class="block-body-bg" data-0="top: 0px;" data-690="top: -345px;"></div>
@@ -279,14 +256,14 @@ function change_ad(obj){
                           <div class="form-group">
                               <label class="col-lg-2 control-label">出生地址</label>
                               <div class="col-lg-10">
-                                <span class="ad1">&nbsp;&nbsp;&nbsp;<a class="test" href="javascript:;" onclick="change_ad(this)">（修改）</a></span>
+                                <span class="ad1">&nbsp;&nbsp;&nbsp;<a id="user_changeAddress" href="javascript:;">（修改）</a></span>
                 <span class="ad2" style="display:none"><select id="birthprovince" name="birthprovince" onchange=""  class="" ><option value=""></option></select>                <select id="birthcity" name="birthcity" onchange=""  class="" ><option value=""></option></select>                <select id="birthdist" name="birthdist" onchange=""  class="" ><option value=""></option></select></span>
                               </div>
                           </div>
                           <div class="form-group">
                               <label class="col-lg-2 control-label">居住地址</label>
                               <div class="col-lg-10">
-                                <span class="ad1">&nbsp;&nbsp;&nbsp;<a class="test" href="javascript:;" onclick="change_ad(this)">（修改）</a></span>
+                                <span class="ad1">&nbsp;&nbsp;&nbsp;<a id="user_changeAddress" href="javascript:;">（修改）</a></span>
                   <span class="ad2" style="display:none">
                 <select id="resideprovince" name="resideprovince" onchange=""  class="" ><option value=""></option></select>                <select id="residecity" name="residecity" onchange=""  class="" ><option value=""></option></select>                <select id="residedist" name="residedist" onchange=""  class="" ><option value=""></option></select></span>
                               </div>
