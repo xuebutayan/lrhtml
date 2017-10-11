@@ -157,7 +157,8 @@
               <li><a href="#zhuce" data-toggle="tab">注册</a></li>
             </ul>
           </div>
-          <form action="/index.php/User/User/doLogin.html" method="post" id="denglu">
+          <div class="tab-content">
+          <form action="/index.php/User/User/doLogin.html" method="post" id="denglu" class="tab-pane fade active in">
             <div class="login-form">
               <div class="input-group">
                 <span class="icon-user pic"></span>
@@ -170,7 +171,7 @@
               </div>
 
               <div class="input-group">
-                <span class="pic icon-user"></span>
+                <span class="pic icon-key"></span>
                 <input type="text" class="form-control " name="code" maxlength="4" placeholder="请输入验证码">
 
                 <span class="input-group-addon" style="width: 120px; padding:0 6px 0 0; cursor: pointer;"><img class="ccodepic" onClick="this.src='/api.php?m=Seccode&length=4&width=112&height=35&font_size=16&'+Math.random()" src="/api.php?m=Seccode&length=4&width=112&height=35&font_size=16" style="cursor:pointer;vertical-align: middle;"/>
@@ -182,7 +183,7 @@
 
             </div>
           </form>
-          <form action="/index.php/User/User/doLogin.html" method="post" id="zhuce">
+          <form action="/index.php/User/User/doLogin.html" method="post" id="zhuce" class="tab-pane fade">
             <div class="login-form">
               <div class="input-group">
                 <span class="icon-user pic"></span>
@@ -190,23 +191,30 @@
               </div>
 
               <div class="input-group">
-                <span class="icon-lock pic"></span>
-                <input class="form-control" type="password" name="password" maxlength="128" id="password" placeholder="请输入密码">
+                <span class="icon-folder-close pic"></span>
+                <input class="form-control " type="email" name="email" maxlength="128" id="email" placeholder="填写正确Email，将可能被要求认证">
               </div>
 
               <div class="input-group">
-                <span class="pic icon-user"></span>
+                <span class="icon-lock pic"></span>
+                <input class="form-control" type="password" name="password" maxlength="128" id="password" placeholder="请输入密码">
+                <span class="material-input"></span>
+                <span class="input-group-addon"><a id="mess" href="javascript:;" onclick="toggle_pwd(this)">显示</a></span>
+              </div>
+
+              <div class="input-group">
+                <span class="pic icon-key"></span>
                 <input type="text" class="form-control " name="code" maxlength="4" placeholder="请输入验证码">
 
                 <span class="input-group-addon" style="width: 120px; padding:0 6px 0 0; cursor: pointer;"><img class="ccodepic" onClick="this.src='/api.php?m=Seccode&length=4&width=112&height=35&font_size=16&'+Math.random()" src="/api.php?m=Seccode&length=4&width=112&height=35&font_size=16" style="cursor:pointer;vertical-align: middle;"/>
                  </span>
                  </div>
               <div style="clear:both;"></div>
-              <div><a href=""><img class="img-responsive" src="images/dl.jpg"></a></div>
-              <div class="forget"><a href="">忘记密码？</a></div>
+              <div><a href=""><img class="img-responsive" src="images/zhuce.jpg"></a></div>
+              <div class="forget">已有账户？<a href="" id="denglu">点击登录</a></div>
 
             </div>
-          </form>
+          </form></div>
           <div class="login-footer">
             您还可以：<a href=""><img class="img-responsive" src="images/qqdl.jpg"></a>
           </div>

@@ -11,6 +11,7 @@ require('./module/tab.js');
 require('./module/collapse.js');
 //轮播图
 require('./module/jquery.lightSlider.js');
+
 //头部轮播
 if($("#index-banner").length > 0){
 	$("#index-banner").lightSlider({
@@ -62,4 +63,17 @@ $('#user_changeAddress').click(function(){
 
 })();
 
+/*
+//密码显示隐藏
+$('#mess').click(function toggle_pwd(obj){
+	if(obj.innerHTML=='显示'){
+        $('#password').attr('type','text');
+        obj.innerHTML='隐藏'
+    }else{
+        $('#password').attr('type','password');
+        obj.innerHTML='显示'
+    }
 
+});
+
+*/
