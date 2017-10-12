@@ -184,17 +184,7 @@
             </div>
           </div>
         </div>
-<script type="text/javascript">
-var GV = {ACTION_NAME:"show",ROOT:""};
- GV.COMMENT = {
-    ALLOW: "1",
-    MID:"10",
-    AID:"4",
-    URL_ADD: "/Comment/insert.html",
-    URL_GET:"/Comment/ajaxGet/mid/10/aid/4/size/15.html",
-    URL_REPLY_LOAD: "",
-  };
-</script>
+
 <div id="comment" class="panel">
   <div class="panel-heading">
     <div class="pull-right small">文明上网，理性发言。</div>
@@ -209,12 +199,54 @@ var GV = {ACTION_NAME:"show",ROOT:""};
     </div>
   </div>
   <div class="panel-heading">
-    <h3 class="panel-title">全部评论<span class="on-left small">（当前<em class="comment-total on-right">0</em>条）</span></h3>
+    <h3 class="panel-title">全部评论<span class="on-left small">（当前<em class="comment-total on-right">1</em>条）</span></h3>
   </div>
-  <div class="panel-body">
+<div class="panel-body">
     <div class="list-group list-comment list-comment-container">
-    <div class="text-center">暂无评论~</div>
-    </div>
+      <div class="list-group-item" id="comment-1">
+        <div class="row-picture"><img class="circle" src="images/savatar.jpg" alt="icon"></div>
+        <div class="row-content">
+          <div class="least-content"></div>
+          <h4 class="list-group-item-heading">test<span class="list-comment-date">9月17日 14:14</span></h4>
+          <div class="list-group-item-text rating-show-comment" data-parent="0" data-static="true"></div>
+
+          <div class="list-group-item-text">aa</div>
+          <p class="list-comment-action"><span class="reply-action on-right" data-top-id="1" data-parent-id="1" data-parent-author="test"><i class="icon icon-comment on-right"></i>1</span></p>
+        </div>
+      </div>
+      <div class="list-group-separator"></div>
+
+      <div class="list-group list-comment list-comment-reply" id="reply-1">
+        <div class="list-group-item" id="comment-2">
+          <div class="row-picture"><img class="circle" src="images/savatar.jpg" alt="icon"></div>
+          <div class="row-content">
+            <div class="least-content"></div>
+            <h4 class="list-group-item-heading">test<span class="list-comment-date">9月17日 14:15</span></h4>
+            <div class="list-group-item-text rating-show-comment" data-parent="1" data-static="true"></div>
+            <div class="list-group-item-text">@test ,test</div>
+            <p class="list-comment-action"><span class="reply-action on-right" data-top-id="1" data-parent-id="2" data-parent-author="test"><i class="icon icon-comment on-right"></i>1</span></p>
+          </div>
+        </div>
+
+      <div class="list-group-separator"></div>
+
+
+        <div class="list-group-item" id="comment-3">
+          <div class="row-picture"><img class="circle" src="images/savatar.jpg" alt="icon"></div>
+          <div class="row-content">
+            <div class="least-content"></div>
+            <h4 class="list-group-item-heading">test<span class="list-comment-date">9月17日 14:15</span></h4>
+            <div class="list-group-item-text rating-show-comment" data-parent="2" data-static="true"></div>
+            <div class="list-group-item-text">@test ,test1</div>
+            <p class="list-comment-action"><span class="reply-action on-right" data-top-id="1" data-parent-id="3" data-parent-author="test"><i class="icon icon-comment on-right"></i>0</span></p>
+
+            <div class="reply-form" id="reply-form-3" style="display: block;"><textarea class="form-control" id="reply-text-3" rows="3" placeholder="回复给@test："></textarea><div class="clearfix"><div class="pull-right"><a href="javascript:void(0)" class="btn btn-primary btn-xs comment-submit" data-parent="3" data-topid="1">回复</a></div></div></div>
+
+          </div>
+        </div>
+    <div class="list-group-separator"></div>
+  </div>
+  <div class="list-comment-pagination text-center"><ul class="pagination"><li disabled=""><a>1 条评论</a></li>          </ul></div></div>
   </div>
 </div>
       </div>
