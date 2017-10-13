@@ -10,6 +10,7 @@ const DIST_PATH = path.join(ROOT_PATH, './dist');
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -73,6 +74,22 @@ module.exports = {
       $: "jquery"
     }),
     new ExtractTextPlugin('[name]-[contenthash:5].css'),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorOptions: { discardComments: {removeAll: true } },
+      canPrint: true
+    }),
+    new UglifyJSPlugin({
+      uglifyOptions:{
+        ie8:false,
+        ecma:8,
+        output:{
+          comments:false,
+          beautify:false
+        }
+      }
+    }),
     new HtmlWebpackPlugin({
       filename:DIST_PATH+'/index.html',
       template: SRC_PATH + '/index.html'
@@ -124,17 +141,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename:DIST_PATH+'/user.html',
       template:SRC_PATH+'/user.html'
-    })/*,
-    new UglifyJSPlugin({
-      uglifyOptions:{
-        ie8:false,
-        ecma:8,
-        output:{
-          comments:false,
-          beautify:false
-        }
-      }
-    })*/
+    })
   ],
   devtool:'inline-source-map',
   devServer: {
