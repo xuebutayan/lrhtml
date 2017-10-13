@@ -11,6 +11,7 @@ require('./module/tab.js');
 require('./module/collapse.js');
 //轮播图
 require('./module/jquery.lightSlider.js');
+require('./module/comment.js');
 
 //头部轮播
 if($("#index-banner").length > 0){
@@ -36,7 +37,7 @@ $('.J_gotoTop').on('click', function(){
     return false;
 });
 //会员模块
-$('#user_changeAddress').click(function(){
+$('.user_changeAddress').click(function(){
 	$(this).parent('.ad1').css('display','none');
 	$(this).parent('.ad1').siblings('.ad2').css('display','block');
 	require.ensure(['./module/superSelect.js','./module/location.js'],function(require){
@@ -59,21 +60,17 @@ $('#user_changeAddress').click(function(){
 	});
 });
 
-
-
-})();
-
-/*
-//密码显示隐藏
-$('#mess').click(function toggle_pwd(obj){
-	if(obj.innerHTML=='显示'){
-        $('#password').attr('type','text');
-        obj.innerHTML='隐藏'
+//登录页密码显示
+$('#mess').click(function(){
+	var obj = $(this);
+	var password = $(this).parent('.input-group-addon').siblings('#password');
+	if(obj.html()=='显示'){
+        $(password).attr('type','text');
+        obj.html('隐藏');
     }else{
-        $('#password').attr('type','password');
-        obj.innerHTML='显示'
+        $(password).attr('type','password');
+        obj.html('显示');
     }
-
 });
 
-*/
+})();
